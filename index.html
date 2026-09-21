@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rumah &amp; Rezeki — Semak Kelayakan Rumah Pertama Percuma</title>
+<meta name="description" content="Sewa 10 tahun kayakan tuan rumah. Beli 10 tahun kayakan diri sendiri. Semak kelayakan rumah pertama anda — percuma, 60 saat.">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"Segoe UI",Roboto,sans-serif;background:#000;color:#fff;line-height:1.7}
+.wrap{max-width:640px;margin:0 auto;padding:0 20px}
+header{padding:28px 0 8px;text-align:center}
+.logo{width:64px;height:64px;margin:0 auto 10px}
+.brand{font-weight:800;letter-spacing:2px;font-size:15px}
+.tag{color:#9a9a9a;font-size:13px}
+.hero{text-align:center;padding:36px 0 28px}
+.hero .kicker{display:inline-block;border:1px solid #3a3a3a;border-radius:999px;padding:6px 16px;font-size:12.5px;color:#9a9a9a;letter-spacing:1px}
+.hero h1{font-size:clamp(30px,7vw,44px);line-height:1.2;margin:20px 0 12px;font-weight:800}
+.hero h1 span{color:#9a9a9a}
+.hero p{color:#c9c9c9;font-size:17px}
+.divider{width:100px;height:3px;background:#3a3a3a;margin:24px auto}
+.card{background:#0a0a0a;border:1px solid #222;border-radius:18px;padding:26px 22px;margin:18px 0}
+.card h2{font-size:21px;margin-bottom:10px}
+.card p,.card li{color:#c9c9c9;font-size:15.5px}
+.card ul{list-style:none;margin-top:10px}
+.card li{padding:8px 0;border-top:1px solid #1a1a1a}
+.card li:first-child{border-top:0}
+.card li b{color:#fff}
+label{display:block;font-size:13.5px;font-weight:700;color:#c9c9c9;margin:14px 0 6px}
+input,select,textarea{width:100%;padding:13px 14px;border-radius:12px;border:1px solid #333;background:#111;color:#fff;font-size:16px;font-family:inherit}
+input:focus,select:focus,textarea:focus{border-color:#fff;outline:none}
+select option{background:#111}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+button.go{width:100%;margin-top:20px;padding:16px;border:0;border-radius:14px;background:#fff;color:#000;font-size:17px;font-weight:800;cursor:pointer}
+button.go:disabled{opacity:.5;cursor:wait}
+button.go:hover{background:#e8e8e8}
+.consent{display:flex;gap:10px;align-items:flex-start;margin-top:16px;font-size:13px;color:#9a9a9a}
+.consent input{width:auto;margin-top:4px}
+.note{text-align:center;color:#777;font-size:12.5px;margin-top:12px}
+.ok{display:none;background:#0a1f0a;border:1px solid #2e7d32;border-radius:14px;padding:18px;margin-top:16px}
+.ok.show{display:block}
+.err{display:none;background:#1f0a0a;border:1px solid #7d2e2e;border-radius:14px;padding:18px;margin-top:16px}
+.err.show{display:block}
+footer{text-align:center;color:#555;font-size:12.5px;padding:34px 0 44px}
+footer a{color:#999}
+@media(max-width:480px){.row{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+<svg class="logo" viewBox="0 0 100 80" fill="none" stroke="#fff" stroke-width="5"><path d="M8 38 L50 8 L92 38"/><rect x="24" y="38" width="52" height="32"/><rect x="46" y="52" width="8" height="18" fill="#fff" stroke="none"/></svg>
+<div class="brand">RUMAH &amp; REZEKI</div>
+<div class="tag">1 rumah 1 rezeki &nbsp;•&nbsp; @rumahrezeki</div>
+</header>
+
+<section class="hero">
+<span class="kicker">SEMAKAN PERCUMA • 60 SAAT</span>
+<h1>Sewa 10 tahun kayakan tuan rumah.<br><span>Beli 10 tahun kayakan diri sendiri.</span></h1>
+<p>Rumah pertama bukan untuk mewah.<br>Tapi untuk mula.</p>
+<div class="divider"></div>
+<p style="font-size:15px;color:#9a9a9a">Isi borang di bawah — kami semak kelayakan loan &amp; pilihan rumah ikut gaji anda. Percuma, tiada paksaan.</p>
+</section>
+
+<section class="card">
+<h2>Kenapa semak dengan kami?</h2>
+<ul>
+<li><b>Bahasa mudah,</b> bukan bahasa bank — faham dulu, baru berani.</li>
+<li><b>Ikut kemampuan,</b> bukan ikut kawan — kawan tak bayar ansuran anda.</li>
+<li><b>Semak kelayakan percuma</b> — tahu boleh pinjam berapa sebelum pilih rumah.</li>
+</ul>
+</section>
+
+<section class="card" id="borang">
+<h2>Semak kelayakan saya</h2>
+<p>Lengkapkan di bawah. Kami hubungi anda melalui WhatsApp dalam 24 jam.</p>
+<form id="leadForm" novalidate>
+<label for="nama">Nama penuh *</label>
+<input id="nama" name="Nama" type="text" placeholder="cth: Ahmad bin Ali" required autocomplete="name">
+<div class="row">
+<div><label for="telefon">No. WhatsApp *</label>
+<input id="telefon" name="Telefon" type="tel" placeholder="cth: 0123456789" required autocomplete="tel"></div>
+<div><label for="email">Emel (pilihan)</label>
+<input id="email" name="Emel" type="email" placeholder="cth: nama@emel.com" autocomplete="email"></div>
+</div>
+<div class="row">
+<div><label for="umur">Umur *</label>
+<select id="umur" name="Umur" required>
+<option value="">— Pilih —</option>
+<option>18 – 24</option><option>25 – 34</option><option>35 – 44</option><option>45 ke atas</option>
+</select></div>
+<div><label for="gaji">Gaji bulanan *</label>
+<select id="gaji" name="Gaji" required>
+<option value="">— Pilih —</option>
+<option>Bawah RM3,000</option><option>RM3,000 – RM4,999</option><option>RM5,000 – RM7,999</option><option>RM8,000 ke atas</option>
+</select></div>
+</div>
+<div class="row">
+<div><label for="status">Rumah pertama? *</label>
+<select id="status" name="Rumah_Pertama" required>
+<option value="">— Pilih —</option>
+<option>Ya, ini rumah pertama saya</option><option>Bukan, saya nak tambah aset</option>
+</select></div>
+<div><label for="lokasi">Lokasi diingini *</label>
+<input id="lokasi" name="Lokasi" type="text" placeholder="cth: Semenyih / Cheras" required></div>
+</div>
+<label for="mesej">Soalan / mesej (pilihan)</label>
+<textarea id="mesej" name="Mesej" rows="3" placeholder="cth: Saya nak tahu deposit minimum..."></textarea>
+<input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+<label class="consent"><input type="checkbox" id="pdpa" required><span>Saya setuju dihubungi melalui WhatsApp/telefon mengenai kelayakan &amp; pilihan rumah. *</span></label>
+<button class="go" type="submit" id="btnSubmit">Semak Kelayakan Saya — Percuma</button>
+<div class="ok" id="okBox">✅ <b>Terima kasih!</b> Maklumat diterima. Kami akan WhatsApp anda dalam 24 jam. 1 rumah 1 rezeki.</div>
+<div class="err" id="errBox">❌ <b>Maaf, hantaran gagal.</b> Sila cuba lagi atau WhatsApp kami terus.</div>
+</form>
+<p class="note">Data anda selamat &amp; hanya untuk tujuan semakan kelayakan (PDPA).</p>
+</section>
+
+<section class="card">
+<h2>Kata deep hari ini</h2>
+<p>“Tunggu harga turun, harga makin naik.<br>Mula kecil lebih baik dari tunggu sempurna.”</p>
+<p style="margin-top:10px">Follow <b>@rumahrezeki</b> di Facebook &amp; TikTok — 1 deep setiap malam jam 8.</p>
+</section>
+
+<footer>
+RUMAH &amp; REZEKI • 1 rumah 1 rezeki<br>
+<a href="https://www.facebook.com/profile.php?id=61594262717644">Facebook Page</a>
+</footer>
+
+</div>
+<script>
+(function(){
+var form=document.getElementById('leadForm'),btn=document.getElementById('btnSubmit'),
+ok=document.getElementById('okBox'),err=document.getElementById('errBox');
+form.addEventListener('submit',async function(e){
+e.preventDefault();err.classList.remove('show');
+if(!form.checkValidity()){form.reportValidity();return;}
+var tel=document.getElementById('telefon').value.replace(/[^0-9+]/g,'');
+if(tel.replace(/\D/g,'').length<9){err.textContent='❌ No. WhatsApp tidak sah. Sila semak semula.';err.classList.add('show');return;}
+btn.disabled=true;btn.textContent='Menghantar...';
+var data={};
+new FormData(form).forEach(function(v,k){if(k.charAt(0)!=='_')data[k]=v;});
+data._subject='🏠 Lead Baru Rumah & Rezeki — '+data.Nama;
+data._template='table';data._captcha='false';
+try{
+var r=await fetch('https://formsubmit.co/ajax/azrisaadproperties@gmail.com',{method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},body:JSON.stringify(data)});
+if(!r.ok)throw new Error('HTTP '+r.status);
+ok.classList.add('show');form.reset();
+ok.scrollIntoView({behavior:'smooth',block:'center'});
+}catch(ex){err.classList.add('show');}
+btn.disabled=false;btn.textContent='Semak Kelayakan Saya — Percuma';
+});
+})();
+</script>
+</body>
+</html>
