@@ -41,6 +41,10 @@ button.go:hover{background:#e8e8e8}
 .ok.show{display:block}
 .err{display:none;background:#1f0a0a;border:1px solid #7d2e2e;border-radius:14px;padding:18px;margin-top:16px}
 .err.show{display:block}
+.wa-alt{display:block;text-align:center;margin-top:12px;padding:13px;border:1px solid #333;border-radius:14px;color:#fff;text-decoration:none;font-weight:700;font-size:15.5px}
+.wa-alt:hover{border-color:#25D366}
+.wa-float{position:fixed;right:18px;bottom:18px;width:58px;height:58px;border-radius:50%;background:#25D366;display:grid;place-items:center;box-shadow:0 10px 28px rgba(37,211,102,.45);z-index:999}
+.wa-float svg{width:32px;height:32px;fill:#fff}
 footer{text-align:center;color:#555;font-size:12.5px;padding:34px 0 44px}
 footer a{color:#999}
 @media(max-width:480px){.row{grid-template-columns:1fr}}
@@ -110,6 +114,7 @@ footer a{color:#999}
 <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
 <label class="consent"><input type="checkbox" id="pdpa" required><span>Saya setuju dihubungi melalui WhatsApp/telefon mengenai kelayakan &amp; pilihan rumah. *</span></label>
 <button class="go" type="submit" id="btnSubmit">Semak Kelayakan Saya — Percuma</button>
+<a class="wa-alt" href="https://wa.me/601163364664?text=Salam%2C%20saya%20nak%20semak%20kelayakan%20rumah%20pertama%20%28Rumah%20%26%20Rezeki%29." target="_blank" rel="noopener">💬 atau WhatsApp Terus</a>
 <div class="ok" id="okBox">✅ <b>Terima kasih!</b> Maklumat diterima. Kami akan WhatsApp anda dalam 24 jam. 1 rumah 1 rezeki.</div>
 <div class="err" id="errBox">❌ <b>Maaf, hantaran gagal.</b> Sila cuba lagi atau WhatsApp kami terus.</div>
 </form>
@@ -128,6 +133,9 @@ RUMAH &amp; REZEKI • 1 rumah 1 rezeki<br>
 </footer>
 
 </div>
+<a class="wa-float" href="https://wa.me/601163364664?text=Salam%2C%20saya%20nak%20semak%20kelayakan%20rumah%20pertama%20%28Rumah%20%26%20Rezeki%29." target="_blank" rel="noopener" aria-label="WhatsApp kami">
+<svg viewBox="0 0 32 32"><path d="M16 3C9.4 3 4 8.4 4 15c0 2.4.7 4.6 1.9 6.5L4 29l7.7-1.9c1.8 1 3.9 1.5 4.3 1.5 6.6 0 12-5.4 12-12S22.6 3 16 3zm0 21.8c-1.4 0-2.7-.4-3.9-1l-.3-.2-4.2 1 1-4.1-.2-.3c-.7-1.2-1.1-2.6-1.1-4.1 0-4.9 4-8.9 8.9-8.9s8.9 4 8.9 8.9-4 8.7-9.1 8.7zm4.9-6.5c-.3-.1-1.6-.8-1.8-.9-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1-.3-.1-1.1-.4-2.1-1.3-.8-.7-1.3-1.5-1.4-1.8-.1-.3 0-.4.1-.5l.4-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5L14.1 9c-.1-.3-.4-.3-.6-.3h-.5c-.2 0-.5.2-.7.5-.2.3-.9.9-.9 2.2s.9 2.5 1.1 2.7c.1.2 1.9 2.9 4.5 4.1 1.7.7 2.3.8 3.1.6.5-.1 1.6-.6 1.8-1.3.2-.6.2-1.2.2-1.3-.1-.1-.3-.2-.6-.3z"/></svg>
+</a>
 <script>
 (function(){
 var form=document.getElementById('leadForm'),btn=document.getElementById('btnSubmit'),
